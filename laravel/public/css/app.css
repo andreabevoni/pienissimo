@@ -10942,3 +10942,19 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-color: pink;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .title {
+  flex-grow: 1;
+  font-size: 60px;
+  text-align: center;
+}
+
