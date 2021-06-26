@@ -74,7 +74,20 @@
     </div>
   @else
     <div class="">
-      sei loggato
+
+      <ul>
+        @foreach (Auth::user()->tasks as $task)
+          <li>
+            <task
+              :id="{{$task -> id}}"
+              :title="'{{$task -> title}}'"
+              :note="'{{$task -> note}}'"
+            ></task>
+          </li>
+        @endforeach
+      </ul>
+
+
     </div>
   @endguest
 

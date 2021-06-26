@@ -10,7 +10,7 @@
 
     @include('components.header')
 
-    <div class="section">
+    <div id="app" class="section">
       @yield('section')
     </div>
 
