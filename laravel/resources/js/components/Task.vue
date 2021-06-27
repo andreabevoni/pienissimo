@@ -1,13 +1,12 @@
 <template>
-    <div class="">
+    <div>
 
       <div
-        class="list"
+        class="task"
         data-toggle="modal"
         :data-target="'#myModal' + id"
       >
-        ({{id}})
-        {{title}}
+        {{id}} - {{title}}
       </div>
 
       <!-- scheda popup-->
@@ -20,8 +19,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">
-                ({{id}})
-                {{title}}
+                {{id}} - {{title}}
               </h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>

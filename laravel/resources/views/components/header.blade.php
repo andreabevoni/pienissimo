@@ -1,17 +1,17 @@
-<header>
+<header class="d-flex justify-content-center align-items-center">
 
   @auth
-    <div class="">
+    <div class="box">
       Ciao {{ Auth::user()->name }}
     </div>
   @endauth
 
-  <div class="title">
+  <div class="title text-center">
     PIENISSIMO
   </div>
 
   @auth
-    <div class="">
+    <div class="box text-right">
       <a href="{{ route('logout') }}"
          onclick="event.preventDefault();
                   document.getElementById('logout-form').submit();"

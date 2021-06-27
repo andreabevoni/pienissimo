@@ -10,7 +10,7 @@
 
     @include('components.header')
 
-    <div id="app" class="section">
+    <div id="app" class="d-flex justify-content-center align-items-center flex-column">
       @yield('section')
     </div>
 

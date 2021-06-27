@@ -1946,8 +1946,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     id: Number,
@@ -37619,18 +37617,14 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", {}, [
+  return _c("div", [
     _c(
       "div",
       {
-        staticClass: "list",
+        staticClass: "task",
         attrs: { "data-toggle": "modal", "data-target": "#myModal" + _vm.id }
       },
-      [
-        _vm._v(
-          "\n    (" + _vm._s(_vm.id) + ")\n    " + _vm._s(_vm.title) + "\n  "
-        )
-      ]
+      [_vm._v("\n    " + _vm._s(_vm.id) + " - " + _vm._s(_vm.title) + "\n  ")]
     ),
     _vm._v(" "),
     _c(
@@ -37657,9 +37651,9 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\n            (" +
+                      "\n            " +
                         _vm._s(_vm.id) +
-                        ")\n            " +
+                        " - " +
                         _vm._s(_vm.title) +
                         "\n          "
                     )
